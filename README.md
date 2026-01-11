@@ -36,7 +36,7 @@ For Pterodactyl Panel users, the process should be similar, though compatibility
 The following variables can be configured:
 
 | Variable | Description | Default |
-|----------|-------------|---------|
+| ---------- | ------------- | --------- |
 | `ASSET_PACK` | Assets pack (.zip) that are being send to player | `Assets.zip` |
 | `ACCEPT_EARLY_PLUGINS` | Acknowledge that loading early plugins is unsupported and may cause stability issues | `false` |
 | `ALLOW_OP` | Do you wish to allow operators or not | `true` |
@@ -52,7 +52,7 @@ The following variables can be configured:
 
 During the first installation, the Hytale downloader will require authentication with your Hytale account. You'll see output similar to this in the console:
 
-```
+```txt
 Please visit the following URL to authenticate:
 https://oauth.accounts.hytale.com/oauth2/device/verify?user_code=XXXXXXXX
 Or visit the following URL and enter the code:
@@ -61,6 +61,7 @@ Authorization code: XXXXXXXX
 ```
 
 **To complete authentication:**
+
 1. Open the provided URL in your web browser
 2. Enter the authorization code shown in the console
 3. Sign in with your Hytale account credentials
@@ -89,6 +90,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 
 If you encounter any issues or have questions:
+
 - Check existing issues for solutions
 - Open an issue on GitHub
 
