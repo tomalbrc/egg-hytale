@@ -116,17 +116,24 @@ The following options can be configured:
 | `Allow Operators` | Do you wish to allow operators or not | `true` |
 | `Auth Mode` | Authentication mode (authenticated or offline) | `authenticated` |
 | `Automatic Update` | Update the hytale server automatically | `true` |
+| `Boot Commands` | A list of commands to run when the server boots. | (empty) |
+| `Enforce Permissions` | Enforce correct file permissions on startup. This may increase startup time. | `false` |
+| `Event Debug` | Enables detailed debug logging for the internal event system. | `false` |
+| `Force Network Flush` | Forces the network buffer to flush immediately. Can help with latency debugging. | `false` |
 | `JVM Arguments` | Additional Java Virtual Machine arguments for advanced configuration. | See egg config |
 | `Leverage Ahead-Of-Time Cache` | The server ships with a pre-trained AOT cache (HytaleServer.aot) that improves boot times by skipping JIT warmup | `true` |
 | `Disable Sentry Crash Reporting` | Disable Sentry during active plugin development. Hytale uses Sentry to track crashes. Disable it to avoid submitting your development errors | `true` |
 | `Enable Backups` | Enable automatic backups | `false` |
 | `Backup Frequency` | Backup interval in minutes | `30` |
+| `Maximum Backups` | The maximum number of backups to retain. Older backups will be deleted when this limit is reached. | `5` |
 | `Patchline` | What release channel you want to use | `release` |
+| `Persistent Authentication` | Enables caching of authentication tokens. This prevents the need to re-authenticate via the web browser on every server restart. | `ENABLED` |
 | `Memory overhead` | The amount of RAM (in MB) kept aside for the system so the server doesn’t use everything. Java will get the rest. | `0` |
 | `Logger Level` | Sets the logging level for specific components. Use a comma-separated list in the format LoggerName:LEVEL (for example, com.example:INFO) to control how much detail is logged. | `empty` |
-| `Validate Assets` | Causes the server to exit with an error code if assets are invalid. Leave empty to skip validation. | `0` |
+| `Source Query Support` | Automatically installs the Hytale Source Query plugin, allowing external services to query server status. | `false` |
+| `Validate Assets` | Causes the server to exit with an error code if assets are invalid. Leave empty to skip validation. | `false` |
 | `Validate prefabs` | Forces the server to stop and exit with an error if any specified prefab types are invalid. Provide a comma-separated list of prefab categories (e.g. PHYSICS,BLOCKS,BLOCK_STATES,ENTITIES,BLOCK_FILLER) to check. Leave empty to skip validation. | `0` |
-| `Validate world generation` | Causes the server to exit with an error code if world gen is invalid. Leave empty to skip validation. | `0` |
+| `Validate world generation` | Causes the server to exit with an error code if world gen is invalid. Leave empty to skip validation. | `false` |
 
 ### First-Time Authentication
 
