@@ -104,4 +104,5 @@ JAVA_CMD="${JAVA_CMD} --bind 0.0.0.0:${SERVER_PORT}"
 
 # Execute the command
 #echo "$JAVA_CMD"
+chmod +x /home/container/server-wrapper
 eval /home/container/server-wrapper
